@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{font-family: "Oswald", sans-serif;}
+
+/* Alinear los objetos, el logo y el titulo a la izquierda y la lista a la derecha*/
+header{
+    background: rgb(121,9,9);
+    background: linear-gradient(90deg, rgba(121,9,9,1) 0%, rgba(121,9,9,1) 22%, rgb(0, 38, 255) 70%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+nav ul{
+    overflow: hidden;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    padding: 40px;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-family: sans-serif;
+}
+
+header a:hover{
+    background-color: rgb(0, 16, 109);
+}
+
+ /*Mover la imagen y el titulo*/
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Ajuste del tamaño y posicion de la imagen */
+.logo > img{
+    width: 100px;
+    height: 100px;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+/*  TAMAÑO DE TEXTO */
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2.7em;}
+p{ font-size: 1.25em;}
+h1,h2,h1,p,h3{font-family: sans-serif;}
+        
+/* BOTONES */
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    background-color: rgb(0, 16, 109);
+    border: 2px solid black;
+    color: white;
+    margin-top: 70px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgb(36, 99, 215);
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+        
+button:hover{
+  background-color: rgb(121,9,9);
+}
+        
+/* codigo del encabezado principal */
+#free{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://png.pngtree.com/thumb_back/fw800/back_pic/02/66/87/73578b94f836a03.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#free h1{
+  color: white;
+}
+
+#free button{
+  font-size: 1.75em;
+}
+        
+/*  SECCION DE PELICULAS */
+#nuestros-programas{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://thumbs.dreamstime.com/b/pasillo-oscuro-vac%C3%ADo-del-cine-con-los-asientos-c%C3%B3modos-en-luz-azul-ci%C3%A9rrese-para-arriba-las-filas-asiento-sala-de-142259945.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+}
+
+/* Seccion de series */
+#series{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://images7.alphacoders.com/115/1152297.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+}
+
+/* Seccion de anime */
+#anime{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://w0.peakpx.com/wallpaper/83/791/HD-wallpaper-anime-landscape-cityscape-scenic-sunset-anime-girl-anime.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .contenedor, #series .contenedor, #anime .contenedor{
+    padding: 150px 20px;
+}
+        
+#nuestros-programas h2, #series h2, #anime h2{
+  margin-top: -85px;
+  margin-bottom: 40px;
+  font-size: 3.2em;
+}
+        
+#nuestros-programas p, #series p, #anime p{
+  display: block;
+ /* margin-bottom: 80px; */
+}
+        
+/* Alinear los contenedores uno al lado del otro */
+#nuestros-programas .programas, #series .programas, #anime .programas{
+  display: flex;
+  justify-content: center;
+}
+
+#nuestros-programas .columna, #series .columna_dos, #anime .columna_tres{
+  padding: 50px;
+  margin: 30px;
+  border-radius: 15px;
+  background-size: 100% 150px;
+  background-repeat: no-repeat;
+  background-color: #0a141d;
+  box-shadow: 2px 2px 10px rgb(36, 99, 215);
+  width: 40%;
+}
+        
+/*Estos códigos de CSS permiten incluir una imagen detrás de la caja a la que
+  pertenece cada uno. Además tiene un linear-gradient que opaca un poco las
+  imágenes con respecto al color indicado*/
+.columna:first-child{
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("https://imagenes.20minutos.es/files/og_thumbnail/uploads/imagenes/2022/07/05/thor-love-and-thunder.jpeg");
+}
+        
+.columna:nth-child(2){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("https://static.abc.es/media/peliculas/000/025/287/wall-e-batallon-de-limpieza-2.jpg");
+}
+
+.columna:nth-child(3){
+  background-image: linear-gradient(
+      0deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)
+  )
+  ,url("https://www.ecartelera.com/images/sets/49700/49746.jpg");
+}
+
+.columna_dos:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://img.asmedia.epimg.net/resizer/LOPgNVw4H_KNzCDZEmhMzwqI5V8=/360x203/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/HZIBIBBBDVNO7D4GW6CX27FM4Y.jpg");
+}
+          
+.columna_dos:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://phantom-marca.unidadeditorial.es/20a6326c21b0bef5d1cb18cf3a9e40d3/resize/1320/f/jpg/assets/multimedia/imagenes/2022/06/08/16546830526781.jpg");
+}
+  
+.columna_dos:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://i.blogs.es/16e585/breaking-bad/1366_2000.jpg");
+}
+
+.columna_tres:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://www.egames.news/__export/1655319452613/sites/debate/img/2022/06/15/one_punch-man_saitama_ha_sido_superado_y_ya_no_es_el_guerrero_mxs_fuerte_de_su_universo.jpg_976912859.jpg");
+}
+          
+.columna_tres:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://i.blogs.es/04ac6a/2560_3000/1366_2000.jpeg");
+}
+  
+.columna_tres:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("https://as01.epimg.net/meristation/imagenes/2020/05/29/noticias/1590777254_943497_1590777292_noticia_normal.jpg");
+}
+
+.columna p, .columna_dos p, .columna_tres p{
+    margin-top: 20%;
+}
+
+.columna h3, .columna_dos h3, .columna_tres h3{
+    height: 20%;
+}
+
+.contenedor .programas a{
+    text-decoration: none;
+}
+
+/* Ajustes del pie de pagina */
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(56, 1, 1);
+}
+
+.pie-pagina .footer-one{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo > img{
+    width: 200px;
+    height: 200px;
+    vertical-align: top;
+}
+
+.parrafo h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.parrafo p{
+    color: #efefef;
+    margin-bottom: 20px;
+}
+
+.pie-pagina  a{
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    line-height: 45px;
+    margin-right: 20px;
+}
+
+.red-social a img{
+    width: 50px;
+}
+
+.footer-two{
+    background-color: rgb(0, 38, 255);
+    padding: 10px 5px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Iniciar sesion*/
+
+.inicio-sesion{
+    width: 50%;
+    height: 100%;
+}
+
+.login{
+    height: 500px;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    background: rgb(121,9,9);
+    text-align: center;
+    width: 50%;
+    margin: auto auto;
+    margin-top: 50%;
+    border-radius: 50px;
+    box-shadow: 5px 5px 30px rgb(121,9,9);
+}
+
+form .title{
+    padding-top: 40px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+
+form label{
+    margin-bottom: 20px;
+}
+
+form label .fa-solid{
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+form label input{
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    border-radius: 80px;
+}
+
+form .link{
+    color: #fff;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+form button{
+    color: #000;
+    border: none;
+    background: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 50px;
+    width: 300px;
+}
+
+#iniciar{
+    margin-left: 55%;
+ }
+ #registrarse{
+     margin-left: 25px;
+ }
